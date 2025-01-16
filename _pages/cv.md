@@ -11,18 +11,19 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Electrical Engineering, Uludag University
+* M.S. in Computer Engineering, Uludag University
+* Ph.D in Computer Science, Eötvös Loránd University, 2026 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* AI/ML Researcher: 9/2022 to Present
+  * AI/ML Development & Implementation: Led finetuning and deployment of advanced AI models including SAM-2, YOLOWorld and Llama 2, demonstrating expertise in model training, validation, and maintenance aligned with real-world applications
+  * Data Pipeline Development: Designed and implemented end-to-end data processing pipelines for ML applications, including data cleaning, preprocessing, and feature/keypoint engineering to optimize model performance
+  * Data Science & Visualization: Utilized Python-based visualization libraries (Matplotlib, Seaborn, Plotly, Tensorboard) to create comprehensive analytical dashboards and performance metrics for ML models
+  * Object Detection & Tracking: Experience in object detection, segmentation, and tracking, leveraging recent algorithms to enhance visual recognition systems using local/global feature descriptors
 
-* Fall 2015: Research Assistant
+* 2015: Research Assistant
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
