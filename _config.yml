@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Kaan Karaköse / PhD Student"
+title                    : "Kaan Karaköse / PhD Candidate"
 title_separator          : "-"
 name                     : &name "Kaan Karaköse"
 description              : &description "personal description"
-url                      : https://kaankarakose.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : #https://kaankarakose.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : #"academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : 
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -75,20 +75,20 @@ social:
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-5F3M0GKDZC"
 
 
 # Site Author
 author:
-  name             : "Kaan Karakose"
+  name             : "Kaan Karaköse"
   avatar           : "Kaan_Karakose_PP.jpg"
   bio              : ""
   location         : "Budapest"
-  employer         :
-  pubmed           : 
-  googlescholar    : 
+  employer         : "NIPG"
+  pubmed           :
+  googlescholar    :
   email            :
-  researchgate     :  "https://www.researchgate.net/profile/Kaan-Karakoese-2"# example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  #"https://www.researchgate.net/profile/Kaan-Karakoese-2"# example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/kaankarakose"
+  github           : "kaankarakose"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "kaankarakose"
   orcid            : "http://orcid.org/0000-0002-4136-7592"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
+  steam            : "jarles13"
   tumblr           :
-  twitter          : 
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -181,12 +181,6 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: False
-    permalink: /:collection/:path/
-  talks:
-    output: False
-    permalink: /:collection/:path/
 
 
 # Defaults
@@ -228,22 +222,22 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: false
+  #     share: false
+  #     comment: false
+  # # # # _talks
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: false
+  #     share: false
 
 # Sass/SCSS
 sass:
@@ -255,7 +249,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Budapest # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -309,3 +303,9 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Typography
+fonts:
+  primary: "Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+  heading: "Roboto Slab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+  code: "Source Code Pro, Monaco, Consolas, 'Courier New', Courier, monospace"
