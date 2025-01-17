@@ -17,7 +17,7 @@ Education
 ======
 * *B.S.* in Electrical Engineering, Uludag University
 * *M.S.* in Computer Engineering, Uludag University
-* *Ph.D* in Computer Science, Eötvös Loránd University, 2026 (expected 🙏 )
+* *Ph.D* in Computer Science, Eötvös Loránd University, 2026 | expected 🙏|
 
 Work experience
 ======
