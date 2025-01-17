@@ -73,9 +73,10 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "G-5F3M0GKDZC"
+    anonymize_ip         : true # Adds privacy for EU GDPR compliance
 
 
 # Site Author
@@ -309,3 +310,8 @@ fonts:
   primary: "Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
   heading: "Roboto Slab, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
   code: "Source Code Pro, Monaco, Consolas, 'Courier New', Courier, monospace"
+
+# Mobile Settings
+mobile_settings:
+  viewport                : "width=device-width, initial-scale=1.0"
+  theme_color            : "#ffffff"
