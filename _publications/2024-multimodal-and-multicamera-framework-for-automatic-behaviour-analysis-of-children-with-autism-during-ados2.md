@@ -3,11 +3,11 @@ title: "Multimodal and Multi-camera framework for Automatic Behavior Analysis of
 collection: publications
 permalink: /publication/2024-multimodal-and-multicamera-framework-for-automatic-behaviour-analysis-of-children-with-autism-during-ados2
 excerpt: ''
-date: 2024-01-01
+date: 2025-01-01
 venue: ''
 paperurl: 'https://un-pub.eu/ojs/index.php/gjcs/article/view/5810'
-citation: 'Melício, B., Karakose, K., Fodor, A., Xiang, L., Varga, V., Soorya L., Dillon, E., Chetouani, M., Fenech, K., & Lorincz, A. (2024). .&quot; <i>Global Journal of Computer Sciences: Theory and Research</i>.'
+citation: 'Melício, B., Karakose, K., Fodor, A., Xiang, L., Varga, V., Soorya L., Dillon, E., Chetouani, M., Fenech, K., & Lorincz, A. (2024). .&quot; <i>Computing</i>.'
 ---
 Under Review!
 
-[Download paper here]()
+[Download paper here (Soon)]()

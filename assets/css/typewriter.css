@@ -1,0 +1,70 @@
+.typewriter-container {
+    position: relative;
+    width: 100%;
+}
+
+.typewriter-effect {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.skip-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6c757d;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    &:hover {
+        background-color: #e9ecef;
+        color: #495057;
+    }
+}
+
+.skip-button:hover {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.txt {
+    border-right: 0.2rem solid transparent;
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+    display: inline-block;
+    margin-left: 2px;
+    color: #333;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.typewriter-effect.complete {
+    animation: fadeOut 1s forwards;
+    animation-delay: 2s;
+}
+
+.about-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 2em;
+}
