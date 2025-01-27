@@ -42,7 +42,7 @@ class TypeWriter {
 
     turboMode() {
         // Increase speed of typeSpeed
-        this.typeSpeed = 5; // Minimum speed of 500ms
+        this.typeSpeed = 2; // Minimum speed of 500ms
     }
 }
 
