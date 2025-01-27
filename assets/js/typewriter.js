@@ -4,7 +4,7 @@ class TypeWriter {
         this.fullText = words;
         this.currentPosition = 0;
         this.wait = parseInt(wait, 10);
-        this.typeSpeed = 120; // Initial typing speed
+        this.typeSpeed = 50; // Initial typing speed
         this.type();
         this.isComplete = false;
     }
