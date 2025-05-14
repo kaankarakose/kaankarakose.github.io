@@ -1,76 +1,108 @@
-// 3D Model Viewer Loading Animation and Performance Optimization
+// 3D Model Viewer Animation and Interactive Effects
 document.addEventListener('DOMContentLoaded', function() {
-  const modelViewer = document.querySelector('model-viewer');
+  const modelViewer = document.querySelector('#profile-model');
   
   if (modelViewer) {
-    const progressBar = modelViewer.querySelector('.progress-bar');
-    const updateBar = modelViewer.querySelector('.update-bar');
+    // Enhanced animation settings
+    let orbitAngle = 0;
+    let tiltAngle = 75;
+    let zoomLevel = 1.2;
+    let isAnimating = true;
+    let isHovering = false;
+    let animationFrame;
     
-    // Better loading progress visualization
-    modelViewer.addEventListener('progress', (event) => {
-      if (progressBar && updateBar) {
-        const progress = event.detail.totalProgress * 100;
-        updateBar.style.width = `${progress}%`;
+    // Initial load animation
+    modelViewer.addEventListener('load', () => {
+      // Bounce animation effect when model first loads
+      const startTime = Date.now();
+      const duration = 1000; // 1 second for initial animation
+      
+      function initialAnimation() {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
         
-        if (progress === 100) {
-          progressBar.classList.add('hide');
+        // Elastic bounce effect
+        const scale = 0.8 + (0.2 * (1 + Math.sin(progress * Math.PI)));
+        modelViewer.style.transform = `scale(${scale})`;
+        
+        if (progress < 1) {
+          requestAnimationFrame(initialAnimation);
         } else {
-          progressBar.classList.remove('hide');
+          modelViewer.style.transform = 'scale(1)';
+          startMainAnimation();
         }
       }
+      
+      initialAnimation();
     });
     
-    // Add load event handling for performance optimization
-    modelViewer.addEventListener('load', () => {
-      // Once loaded, apply smooth animations and transitions
-      modelViewer.setAttribute('reveal', 'auto');
+    // Main continuous animation
+    function startMainAnimation() {
+      function animate() {
+        if (!isAnimating) return;
+        
+        if (!modelViewer.interacting) {
+          // Smooth rotation effect
+          orbitAngle = (orbitAngle + 0.3) % 360;
+          
+          // Add some vertical movement - gentle bobbing
+          const bobAmount = isHovering ? 2 : 1;
+          tiltAngle = 75 + Math.sin(Date.now() / 1000) * bobAmount;
+          
+          // Set the new orbit
+          modelViewer.setAttribute('camera-orbit', 
+            `${orbitAngle}deg ${tiltAngle}deg ${zoomLevel}m`);
+        }
+        
+        animationFrame = requestAnimationFrame(animate);
+      }
       
-      // Add initial mouse-over effects
+      animate();
+      
+      // Add interactive effects
       modelViewer.addEventListener('mouseenter', () => {
-        modelViewer.setAttribute('auto-rotate', 'true');
-        modelViewer.setAttribute('camera-orbit', '0deg 65deg 1.2m');
+        isHovering = true;
+        zoomLevel = 1.0; // Zoom in slightly on hover
       });
       
       modelViewer.addEventListener('mouseleave', () => {
-        modelViewer.setAttribute('auto-rotate', 'true');
-        modelViewer.setAttribute('camera-orbit', '0deg 75deg 1.2m');
+        isHovering = false;
+        zoomLevel = 1.2; // Return to original zoom level
       });
-    });
-    
-    // Handle model interaction with smoother transitions
-    modelViewer.addEventListener('camera-change', () => {
-      // The user is interacting with the model, let them control it
-    });
-    
-    // Custom subtle animation rather than full auto-rotation
-    // This creates a gentler rocking motion that's less distracting
-    let animationActive = true;
-    let animationDirection = 1;
-    let currentAngle = 0;
-    
-    function animateModel() {
-      if (!animationActive || modelViewer.interacting) return;
       
-      currentAngle += (0.2 * animationDirection);
-      
-      // Create a gentle rocking motion between -15 and 15 degrees
-      if (currentAngle > 15) {
-        animationDirection = -1;
-      } else if (currentAngle < -15) {
-        animationDirection = 1;
-      }
-      
-      // Apply the subtle rotation
-      const orbit = modelViewer.getAttribute('camera-orbit');
-      const orbits = orbit.split(' ');
-      if (orbits.length >= 3) {
-        modelViewer.setAttribute('camera-orbit', `${currentAngle}deg ${orbits[1]} ${orbits[2]}`);
-      }
-      
-      requestAnimationFrame(animateModel);
+      // Add click effect
+      modelViewer.addEventListener('click', () => {
+        // Quick spin effect on click
+        const startAngle = orbitAngle;
+        const startTime = Date.now();
+        const spinDuration = 800; // milliseconds
+        
+        // Temporarily stop main animation
+        isAnimating = false;
+        cancelAnimationFrame(animationFrame);
+        
+        function spinEffect() {
+          const elapsed = Date.now() - startTime;
+          const progress = Math.min(elapsed / spinDuration, 1);
+          
+          // Fast spin that gradually slows down
+          const spinSpeed = 360 * (1 - Math.pow(progress - 1, 2));
+          orbitAngle = startAngle + spinSpeed;
+          
+          modelViewer.setAttribute('camera-orbit', 
+            `${orbitAngle}deg ${tiltAngle}deg ${zoomLevel}m`);
+          
+          if (progress < 1) {
+            requestAnimationFrame(spinEffect);
+          } else {
+            // Resume normal animation
+            isAnimating = true;
+            animate();
+          }
+        }
+        
+        spinEffect();
+      });
     }
-    
-    // Start the animation
-    requestAnimationFrame(animateModel);
   }
 });
