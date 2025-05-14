@@ -19,6 +19,10 @@
   backface-visibility: hidden;
 }
 
+.hidden-3d {
+  display: none;
+}
+
 .avatar-3d model-viewer {
   width: 100%;
   height: 10rem;

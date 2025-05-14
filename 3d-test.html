@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Model Test</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer@1.12.0/dist/model-viewer.min.js"></script>
+  <style>
+    .container {
+      margin: 50px auto;
+      width: 300px;
+      height: 300px;
+    }
+    
+    model-viewer {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <model-viewer
+      src="/files/3d/pp.glb"
+      alt="3D Model Test"
+      auto-rotate
+      camera-controls
+      shadow-intensity="0.8"
+    ></model-viewer>
+  </div>
+  
+  <p>If you can see a 3D model above, the integration is working correctly.</p>
+  <p>If not, check browser console for errors.</p>
+</body>
+</html>
