@@ -1,0 +1,100 @@
+/* 3D Avatar Styling */
+.avatar-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.avatar-container:hover {
+  transform: scale(1.05);
+}
+
+.avatar-3d {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.avatar-3d model-viewer {
+  width: 100%;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: transparent;
+  --poster-color: transparent;
+  --progress-bar-color: rgba(0, 104, 255, 0.7);
+  --progress-bar-height: 0.3125rem;
+  --progress-mask: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+  --button-size: 1.875rem;
+  --button-border-radius: 0.9375rem;
+  --matte-color: transparent;
+  display: block;
+  contain: strict;
+  animation: fadeIn 0.5s ease-in;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.avatar-3d model-viewer::part(default-progress-bar) {
+  height: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.avatar-3d .progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.avatar-3d .progress-bar.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.avatar-3d .update-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--progress-bar-color, rgba(0, 104, 255, 0.7));
+  transition: width 0.3s ease;
+  background-image: var(--progress-mask);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.author__avatar {
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Optimize for different screen sizes */
+@media (max-width: 768px) {
+  .avatar-3d model-viewer {
+    height: 8.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-3d model-viewer {
+    height: 7.5rem;
+  }
+}
