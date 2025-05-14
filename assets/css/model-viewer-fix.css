@@ -1,0 +1,43 @@
+/* Global fixes for model-viewer element sizing issues */
+
+/* Ensure proper canvas rendering across all browsers */
+model-viewer {
+  --poster-color: transparent;
+  --progress-bar-height: 0.3rem;
+  --progress-bar-track-color: rgba(255, 255, 255, 0.2);
+  --progress-bar-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Force correct aspect ratio for internal elements */
+model-viewer::part(default), 
+model-viewer div[role="img"],
+model-viewer div.userInput,
+model-viewer .slot.canvas,
+model-viewer canvas,
+model-viewer canvas[data-engine] {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 1 / 1;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Handle iOS Safari specific issues */
+@supports (-webkit-touch-callout: none) {
+  model-viewer {
+    touch-action: pan-y pan-x;
+  }
+  
+  model-viewer div[role="img"],
+  model-viewer canvas {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+}
+
+/* Fix for Android Chrome */
+@supports not (-webkit-touch-callout: none) {
+  model-viewer canvas {
+    object-fit: contain;
+  }
+}

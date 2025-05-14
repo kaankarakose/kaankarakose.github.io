@@ -119,9 +119,33 @@
     margin: 0 auto;
   }
   
+  /* Fix canvas sizing on mobile */
+  .avatar-3d model-viewer canvas,
+  .avatar-3d model-viewer .slot.canvas,
+  .avatar-3d model-viewer #webgl-canvas,
+  .avatar-3d model-viewer div[role="img"] {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 7rem !important;
+    min-height: 7rem !important;
+  }
+  
   /* Simplify animations on mobile for better performance */
   model-viewer {
     --poster-color: transparent;
     --progress-bar-height: 0.2rem;
+  }
+  
+  /* Fix for mobile canvas sizing issue */
+  model-viewer .userInput,
+  model-viewer .slot.canvas,
+  model-viewer canvas,
+  model-viewer canvas#webgl-canvas {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 7rem !important;
+    min-height: 7rem !important;
+    max-width: none !important;
+    max-height: none !important;
   }
 }
