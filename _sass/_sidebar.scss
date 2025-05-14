@@ -112,8 +112,8 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
   }
 }
 .sidebar .author__name {
@@ -125,8 +125,8 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -162,14 +162,14 @@
   display: none;
   position: absolute;
   right: 0;
-  margin-top: 15px;
-  padding: 10px;
+  margin-top: 0.9375rem;
+  padding: 0.625rem;
   list-style-type: none;
-  border: 1px solid $border-color;
+  border: 0.0625rem solid $border-color;
   border-radius: $border-radius;
   background: #fff;
   z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
+  box-shadow: 0 0 0.625rem rgba(#000, 0.25);
   cursor: default;
 
   @include breakpoint($large) {
@@ -186,11 +186,11 @@
     display: block;
     content: "";
     position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
+    top: -0.6875rem;
+    left: calc(50% - 0.625rem);
     width: 0;
     border-style: solid;
-    border-width: 0 10px 10px;
+    border-width: 0 0.625rem 0.625rem;
     border-color: $border-color transparent;
     z-index: 0;
 
@@ -203,11 +203,11 @@
     display: block;
     content: "";
     position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
+    top: -0.625rem;
+    left: calc(50% - 0.625rem);
     width: 0;
     border-style: solid;
-    border-width: 0 10px 10px;
+    border-width: 0 0.625rem 0.625rem;
     border-color: #fff transparent;
     z-index: 1;
 
@@ -222,10 +222,10 @@
 
   a {
     display: block;
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    margin-bottom: 0.3125rem;
+    padding-right: 0.3125rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;

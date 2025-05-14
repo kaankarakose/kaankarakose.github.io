@@ -72,19 +72,19 @@
   li {
     display: block;
     float: left;
-    margin-left: -1px;
+    margin-left: -0.063rem;
 
     a {
       margin-bottom: 0.25em;
       padding: 0.5em 1em;
       font-family: $sans-serif;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: bold;
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
       color: mix(#fff, $gray, 25%);
-      border: 1px solid $light-gray;
+      border: 0.063rem solid $light-gray;
       border-radius: 0;
 
       &:hover {
@@ -132,7 +132,7 @@
     text-align: center;
     text-decoration: none;
     color: mix(#fff, $gray, 50%);
-    border: 1px solid $light-gray;
+    border: 0.063rem solid $light-gray;
     border-radius: $border-radius;
 
     &:hover {
@@ -145,7 +145,7 @@
     }
 
     &:last-child {
-      margin-left: -1px;
+      margin-left: -0.063rem;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
@@ -164,7 +164,7 @@
 .page__comments + .pagination {
   margin-top: 2em;
   padding-top: 2em;
-  border-top: 1px solid $border-color;
+  border-top: 0.063rem solid $border-color;
 }
 
 
@@ -174,7 +174,7 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  min-width: 15.625rem;
   background: $background-color;
 
   a {
@@ -231,7 +231,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        height: 4px;
+        height: 0.25rem;
         background: mix(#fff, $primary-color, 50%);
         width: 100%;
         -webkit-transition: $global-transition;
@@ -253,16 +253,16 @@
     position: absolute;
     top: 100%;
     right: 0;
-    margin-top: 15px;
-    padding: 5px;
-    border: 1px solid $border-color;
+    margin-top: 0.938rem;
+    padding: 0.313rem;
+    border: 0.063rem solid $border-color;
     border-radius: $border-radius;
     background: #fff;
-    box-shadow: 0 0 10px rgba(#000, 0.25);
+    box-shadow: 0 0 0.625rem rgba(#000, 0.25);
 
     a {
       margin: 0;
-      padding: 10px 20px;
+      padding: 0.625rem 1.25rem;
       font-size: $type-size-5;
 
       &:hover {
@@ -274,11 +274,11 @@
     &:before {
       content: "";
       position: absolute;
-      top: -11px;
-      right: 10px;
+      top: -0.688rem;
+      right: 0.688rem;
       width: 0;
       border-style: solid;
-      border-width: 0 10px 10px;
+      border-width: 0 0.688rem 0.688rem;
       border-color: $border-color transparent;
       display: block;
       z-index: 0;
@@ -287,11 +287,11 @@
     &:after {
       content: "";
       position: absolute;
-      top: -10px;
-      right: 10px;
+      top: -0.688rem;
+      right: 0.688rem;
       width: 0;
       border-style: solid;
-      border-width: 0 10px 10px;
+      border-width: 0 0.688rem 0.688rem;
       border-color: #fff transparent;
       display: block;
       z-index: 1;
@@ -299,7 +299,7 @@
 
     li {
       display: block;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 0.063rem solid $border-color;
 
       &:last-child {
         border-bottom: none;
@@ -361,7 +361,7 @@
   font-size: $type-size-6;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 0.063rem solid $border-color;
 }
 
 
@@ -373,9 +373,9 @@
   font-family: $sans-serif-narrow;
   color: $gray;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.063rem;
   background-color: #fff;
-  border: 1px solid $border-color;
+  border: 0.063rem solid $border-color;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
@@ -402,7 +402,7 @@
     font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 0.063rem solid $border-color;
 
     &:hover {
       color: #000;
