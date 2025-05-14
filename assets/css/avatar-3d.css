@@ -93,12 +93,35 @@
 /* Optimize for different screen sizes */
 @media (max-width: 768px) {
   .avatar-3d model-viewer {
-    height: 8.75rem;
+    height: 8rem;
+    width: 8rem;
+    margin: 0 auto;
+  }
+  
+  .avatar-container {
+    transform: none; /* Disable hover effect on tablets */
+  }
+  
+  .avatar-container:hover {
+    transform: none;
+  }
+  
+  .author__avatar {
+    display: flex;
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .avatar-3d model-viewer {
-    height: 7.5rem;
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+  }
+  
+  /* Simplify animations on mobile for better performance */
+  model-viewer {
+    --poster-color: transparent;
+    --progress-bar-height: 0.2rem;
   }
 }

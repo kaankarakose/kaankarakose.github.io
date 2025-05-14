@@ -11,6 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let isHovering = false;
     let animationFrame;
     
+    // Detect if on mobile device
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    
+    // Adjust settings for mobile
+    if (isMobile) {
+      // Simplify animation for better performance on mobile
+      zoomLevel = 1.5; // Show a bit more of the model
+      tiltAngle = 65; // Adjust viewing angle for mobile
+    }
+    
     // Initial load animation
     modelViewer.addEventListener('load', () => {
       // Bounce animation effect when model first loads
@@ -42,12 +52,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!isAnimating) return;
         
         if (!modelViewer.interacting) {
-          // Smooth rotation effect
-          orbitAngle = (orbitAngle + 0.3) % 360;
+          // Smooth rotation effect - slower on mobile
+          const rotationSpeed = isMobile ? 0.2 : 0.3;
+          orbitAngle = (orbitAngle + rotationSpeed) % 360;
           
-          // Add some vertical movement - gentle bobbing
-          const bobAmount = isHovering ? 2 : 1;
-          tiltAngle = 75 + Math.sin(Date.now() / 1000) * bobAmount;
+          // Add some vertical movement - gentle bobbing (reduced on mobile)
+          const bobAmount = isMobile ? 0.5 : (isHovering ? 2 : 1);
+          const baseTilt = isMobile ? 65 : 75;
+          tiltAngle = baseTilt + Math.sin(Date.now() / 1000) * bobAmount;
           
           // Set the new orbit
           modelViewer.setAttribute('camera-orbit', 
