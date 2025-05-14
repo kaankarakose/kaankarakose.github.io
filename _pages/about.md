@@ -13,4 +13,4 @@ redirect_from:
 
 Hey there 👋
 
-I help computers understand how humans interact with objects. As an AI Researcher at ELTE NIPG, I'm studying hand-object interaction by analyzing 2D RGB video frames to detect when objects are being manipulated.
+I help computers understand how humans interact with objects. As an AI Researcher at ELTE NIPG, I'm studying hand-object interaction by analyzing video frames to detect when objects are being manipulated.
