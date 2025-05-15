@@ -111,11 +111,11 @@ $large                      : 1200px;
 $x-large                    : 1800px;
 */
 
-$small                      : 600px !default;
-$medium                     : 768px !default;
-$medium-wide                : 900px !default;
-$large                      : 925px !default;
-$x-large                    : 1280px !default;
+$small                      : 37.5rem !default;
+$medium                     : 48rem !default;
+$medium-wide                : 56.25rem !default;
+$large                      : 57.813rem !default;
+$x-large                    : 80rem !default;
 
 /*
    Grid
@@ -127,7 +127,7 @@ $right-sidebar-width-wide   : 0px;
 
 $susy: (
   columns: 12,
-  column-width: 120px,
+  column-width: 7.5rem,
   gutters: 1/4,
   math: fluid,
   output: float,
@@ -147,10 +147,10 @@ $susy: (
    Other
    ========================================================================== */
 
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$navicon-width              : 28px;
-$navicon-height             : 4px;
+$border-radius              : 0.25rem;
+$box-shadow                 : 0 0.063rem 0.063rem rgba(0, 0, 0, 0.125);
+$navicon-width              : 1.75rem;
+$navicon-height             : 0.25rem;
 $global-transition          : all 0.2s ease-in-out;
 
 /* Background image settings */
