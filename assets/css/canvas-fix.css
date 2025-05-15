@@ -1,0 +1,65 @@
+/* Emergency fix for very small canvas sizes */
+model-viewer .userInput,
+#profile-model .userInput,
+div[role="img"],
+.slot.canvas,
+slot[name="canvas"],
+model-viewer canvas,
+#profile-model canvas,
+canvas#webgl-canvas,
+canvas[data-engine="three.js r139"] {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 300px !important;
+  min-height: 300px !important;
+  transform: none !important;
+}
+
+/* Target exact dimensions you're seeing */
+canvas[width="81"][height="360"],
+canvas[style*="width: 40.5px; height: 180px"] {
+  width: 300px !important;
+  height: 300px !important;
+  min-width: 300px !important;
+  min-height: 300px !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Ensure enough space in parent containers */
+.author__avatar,
+.avatar-container,
+.avatar-3d {
+  min-height: 300px !important;
+  min-width: 300px !important;
+  width: auto !important;
+  margin: 0 auto !important;
+}
+
+/* Fix interactivity */
+#profile-model .userInput[tabindex="0"][role="img"] {
+  pointer-events: auto !important;
+  z-index: 1000 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+/* Force parent container size */
+[itemscope][itemtype="http://schema.org/Person"] {
+  min-height: 400px !important;
+  display: block !important;
+}
+
+/* Ensure proper dimensions on mobile */
+@media (max-width: 48rem) {
+  .author__avatar,
+  .avatar-container,
+  .avatar-3d model-viewer,
+  #profile-model {
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 300px !important;
+    min-height: 300px !important;
+  }
+}

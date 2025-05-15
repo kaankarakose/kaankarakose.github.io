@@ -9,18 +9,32 @@ model-viewer {
   background-color: transparent !important;
 }
 
-/* Force correct aspect ratio for internal elements */
+/* Force correct sizing for ALL internal model-viewer elements */
 model-viewer::part(default), 
 model-viewer div[role="img"],
 model-viewer div.userInput,
 model-viewer .slot.canvas,
 model-viewer canvas,
-model-viewer canvas[data-engine] {
+model-viewer canvas#webgl-canvas,
+model-viewer canvas[data-engine],
+#profile-model::part(default),
+#profile-model div[role="img"],
+#profile-model div.userInput,
+#profile-model .slot.canvas,
+#profile-model canvas,
+#profile-model canvas#webgl-canvas,
+model-viewer slot[name="canvas"] canvas {
   width: 100% !important;
   height: 100% !important;
-  aspect-ratio: 1 / 1;
+  min-width: 200px !important;
+  min-height: 200px !important;
   max-width: none !important;
   max-height: none !important;
+  aspect-ratio: 1 / 1 !important;
+  transform: none !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
 }
 
 /* Handle iOS Safari specific issues */

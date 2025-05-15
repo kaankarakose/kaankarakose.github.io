@@ -2,6 +2,55 @@
 document.addEventListener('DOMContentLoaded', function() {
   const modelViewer = document.querySelector('#profile-model');
   
+  // Fix canvas sizing issues
+  function fixCanvasSizing() {
+    if (modelViewer) {
+      // Get all canvas elements inside model-viewer
+      const canvases = modelViewer.querySelectorAll('canvas');
+      canvases.forEach(canvas => {
+        // Force proper dimensions
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+        canvas.style.minWidth = '200px';
+        canvas.style.minHeight = '200px';
+        
+        // Set proper attributes
+        const parent = canvas.parentElement;
+        if (parent) {
+          const parentWidth = parent.offsetWidth;
+          const parentHeight = parent.offsetHeight;
+          if (parentWidth > 0 && parentHeight > 0) {
+            canvas.width = parentWidth * 2; // High resolution
+            canvas.height = parentHeight * 2; // High resolution
+          }
+        }
+      });
+      
+      // Force userInput container to proper size
+      const userInput = modelViewer.querySelector('.userInput');
+      if (userInput) {
+        userInput.style.width = '100%';
+        userInput.style.height = '100%';
+        userInput.style.minWidth = '200px';
+        userInput.style.minHeight = '200px';
+        userInput.style.position = 'absolute';
+        userInput.style.top = '0';
+        userInput.style.left = '0';
+      }
+    }
+  }
+  
+  // Call immediately
+  fixCanvasSizing();
+  
+  // Also call after load
+  if (modelViewer) {
+    modelViewer.addEventListener('load', fixCanvasSizing);
+    
+    // Call on resize as well
+    window.addEventListener('resize', fixCanvasSizing);
+  }
+  
   if (modelViewer) {
     // Enhanced animation settings
     let orbitAngle = 0;
