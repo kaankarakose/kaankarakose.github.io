@@ -6,6 +6,12 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
+  
+
+  <div class="author__content">
+    <h3 class="author__name">{{ author.name }}</h3>
+    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+  </div>
   <div class="author__avatar">
     <div class="avatar-container">
       <model-viewer
@@ -30,11 +36,6 @@
         </div>
       </model-viewer>
     </div>
-  </div>
-
-  <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
