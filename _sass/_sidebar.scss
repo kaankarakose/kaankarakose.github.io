@@ -99,13 +99,38 @@
   padding-left: 0.9375rem;
   padding-right: 1.5625rem;
   line-height: 1;
-
+  /* Ensure content doesn't block 3D model interaction */
+  pointer-events: none;
+  a, button, input, select, textarea, [role="button"] {
+    pointer-events: auto;
+  }
   @include breakpoint($large) {
     display: block;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
+
+/* Add this for mobile devices */
+@media (max-width: 30rem) {
+  .author__content {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding-top: 1rem; /* Space after the avatar */
+    padding-left: 0;
+  }
+  
+  /* Ensure avatar is properly positioned */
+  .author__avatar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+
 }
 
 .author__name {
