@@ -23,7 +23,7 @@
   display: none;
 }
 
-.avatar-3d model-viewer {
+#profile-model, .avatar-3d model-viewer {
   width: 100%;
   height: 10rem;
   border-radius: 50%;
@@ -101,7 +101,7 @@
 
 /* Optimize for different screen sizes */
 @media (max-width: 48rem) {
-  .avatar-3d model-viewer {
+  #profile-model, .avatar-3d model-viewer {
     height: 8rem;
     width: 8rem;
     margin: 0 auto;
@@ -122,7 +122,7 @@
 }
 
 @media (max-width: 30rem) {
-  .avatar-3d model-viewer {
+  #profile-model, .avatar-3d model-viewer {
     height: 7rem;
     width: 7rem;
     margin: 0 auto;
@@ -144,7 +144,7 @@
     --poster-color: transparent;
     --progress-bar-height: 0.2rem;
   }
-  .avatar-3d model-viewer .userInput {
+  #profile-model .userInput, .avatar-3d model-viewer .userInput {
     width: 100% !important;
     height: 100% !important;
     min-width: 7rem !important;
