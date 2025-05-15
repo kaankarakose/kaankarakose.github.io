@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Force proper dimensions
         canvas.style.width = '100%';
         canvas.style.height = '100%';
-        canvas.style.minWidth = '200px';
-        canvas.style.minHeight = '200px';
+        canvas.style.minWidth = '12.5rem';
+        canvas.style.minHeight = '12.5rem';
         
         // Set proper attributes
         const parent = canvas.parentElement;
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (userInput) {
         userInput.style.width = '100%';
         userInput.style.height = '100%';
-        userInput.style.minWidth = '200px';
-        userInput.style.minHeight = '200px';
+        userInput.style.minWidth = '12.5rem';
+        userInput.style.minHeight = '12.5rem';
         userInput.style.position = 'absolute';
         userInput.style.top = '0';
         userInput.style.left = '0';

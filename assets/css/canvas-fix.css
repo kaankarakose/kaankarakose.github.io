@@ -10,18 +10,18 @@ canvas#webgl-canvas,
 canvas[data-engine="three.js r139"] {
   width: 100% !important;
   height: 100% !important;
-  min-width: 300px !important;
-  min-height: 300px !important;
+  min-width: 18.75rem !important;
+  min-height: 18.75rem !important;
   transform: none !important;
 }
 
 /* Target exact dimensions you're seeing */
 canvas[width="81"][height="360"],
 canvas[style*="width: 40.5px; height: 180px"] {
-  width: 300px !important;
-  height: 300px !important;
-  min-width: 300px !important;
-  min-height: 300px !important;
+  width: 18.75rem !important;
+  height: 18.75rem !important;
+  min-width: 18.75rem !important;
+  min-height: 18.75rem !important;
   max-width: none !important;
   max-height: none !important;
 }
@@ -30,8 +30,8 @@ canvas[style*="width: 40.5px; height: 180px"] {
 .author__avatar,
 .avatar-container,
 .avatar-3d {
-  min-height: 300px !important;
-  min-width: 300px !important;
+  min-height: 18.75rem !important;
+  min-width: 18.75rem !important;
   width: auto !important;
   margin: 0 auto !important;
 }
@@ -47,7 +47,7 @@ canvas[style*="width: 40.5px; height: 180px"] {
 
 /* Force parent container size */
 [itemscope][itemtype="http://schema.org/Person"] {
-  min-height: 400px !important;
+  min-height: 25rem !important;
   display: block !important;
 }
 
@@ -57,9 +57,9 @@ canvas[style*="width: 40.5px; height: 180px"] {
   .avatar-container,
   .avatar-3d model-viewer,
   #profile-model {
-    width: 300px !important;
-    height: 300px !important;
-    min-width: 300px !important;
-    min-height: 300px !important;
+    width: 18.75rem !important;
+    height: 18.75rem !important;
+    min-width: 18.75rem !important;
+    min-height: 18.75rem !important;
   }
 }
