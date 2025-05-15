@@ -130,9 +130,14 @@
   .author__avatar {
     display: block;
     width: 100%;
+    max-width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     z-index: 10; /* Higher z-index to ensure it's above content */
+    
+    /* Override any table-cell constraints */
+    float: none;
+    position: relative;
   }
 }
 

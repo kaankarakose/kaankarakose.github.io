@@ -12,6 +12,22 @@
   transform: scale(1.05);
 }
 
+/* Special handling for Schema.org Person container */
+[itemscope][itemtype="http://schema.org/Person"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 30rem) {
+  .avatar-container {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .avatar-3d {
   width: 100%;
   height: 100%;
@@ -122,9 +138,16 @@
 }
 
 @media (max-width: 30rem) {
+  /* Override constraints from parent containers */
+  [itemscope][itemtype="http://schema.org/Person"] .author__avatar {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Make model viewer larger on mobile */
   #profile-model, .avatar-3d model-viewer {
-    height: 7rem;
-    width: 7rem;
+    height: 12rem;
+    width: 12rem;
     margin: 0 auto;
   }
   
