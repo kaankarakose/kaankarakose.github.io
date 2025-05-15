@@ -116,9 +116,11 @@
   .author__content {
     display: block;
     width: 100%;
-    clear: both;
-    padding-top: 1rem; /* Space after the avatar */
     padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem;
+    z-index: 1;
+    position: relative;
   }
   
   /* Ensure avatar is properly positioned */
@@ -131,6 +133,13 @@
 }
 
 
+}
+.author {
+  @media (max-width: 30rem) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .author__name {

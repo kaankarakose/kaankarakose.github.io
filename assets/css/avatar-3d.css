@@ -89,6 +89,15 @@
   border-radius: 50%;
   overflow: hidden;
 }
+.author__avatar {
+  z-index: 20; /* Ensure the avatar is above content */
+  position: relative;
+}
+.avatar-3d model-viewer {
+  position: relative;
+  z-index: 10;
+  isolation: isolate; /* Creates a new stacking context */
+}
 
 /* Optimize for different screen sizes */
 @media (max-width: 48rem) {
