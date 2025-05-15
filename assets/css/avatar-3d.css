@@ -91,7 +91,7 @@
 }
 
 /* Optimize for different screen sizes */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .avatar-3d model-viewer {
     height: 8rem;
     width: 8rem;
@@ -112,7 +112,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .avatar-3d model-viewer {
     height: 7rem;
     width: 7rem;
@@ -135,6 +135,22 @@
     --poster-color: transparent;
     --progress-bar-height: 0.2rem;
   }
+  .avatar-3d model-viewer .userInput {
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 7rem !important;
+    min-height: 7rem !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 10 !important; /* Ensure it's above other elements */
+    touch-action: pan-y pinch-zoom !important; /* Improve touch behavior */
+  }
+    /* Make sure the interaction area covers the entire model viewer */
+    .avatar-3d model-viewer::part(default-ar-button),
+    .avatar-3d model-viewer::part(default-ar-button) {
+      transform: scale(1.2); /* Make buttons slightly larger on mobile */
+    }
   
   /* Fix for mobile canvas sizing issue */
   model-viewer .userInput,
