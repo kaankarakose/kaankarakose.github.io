@@ -11,6 +11,8 @@ redirect_from:
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/typewriter.css">
 <script src="{{ site.baseurl }}/assets/js/typewriter.js" defer></script>
 
-Hey there 👋
+Welcome! 👋
+I'm an AI Researcher at ELTE NIPG, focusing on behavioral analysis through computer vision. I work at the intersection of human behavior and AI.
 
-I help computers understand how humans interact with objects. As an AI Researcher at ELTE NIPG, I'm studying hand-object interaction by analyzing video frames to detect when objects are being manipulated.
+
+I enjoy tackling technical challenges—whether it's deploying cutting-edge AI models, managing containerized environments, or solving infrastructure problems. I'm always eager to learn new tools and work through complex technical issues.
