@@ -12,6 +12,5 @@ redirect_from:
 <script src="{{ site.baseurl }}/assets/js/typewriter.js" defer></script>
 
 Researcher turned engineer. I ask questions first, build second.
-I think in systems — how things connect, why people assume what they assume,
-where the model breaks from reality. Comfortable in ambiguity;
-that's where the interesting problems live.
+I've spent years studying how minds — human and artificial — model each other.
+That lens doesn't turn off when I close the research tab.
