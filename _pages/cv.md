@@ -26,13 +26,13 @@ redirect_from:
 - Automating validation workflows to reduce manual overhead and increase
   consistency across assessments
 
-**AI/ML Researcher** *(2022 – 2026)*
+**AI/ML Researcher** *(2026)*
 
 - Built a modular multi-camera framework for automated behavioral analysis in clinical assessments
 - Fine-tuned and deployed production-grade vision models using parameter-efficient techniques under real compute constraints
 - Designed multi-site clinical video data pipelines
 
-**Research Assistant** *(2019 – 2022)*
+**Research Assistant** *(2022)*
 
 - Contributed digital image forensics methods for source verification and authenticity analysis
 - Questioned and implemented learning strategy methods for model training
