@@ -13,11 +13,5 @@ redirect_from:
 
 Researcher turned engineer.
 Thinking in systems — how things connect, why people assume what they assume, where the model breaks from reality.
-Comfortable in ambiguity; that's where the interesting problems 
-Comfortable in ambiguity; that's where the interesting 
-Comfortable in ambiguity; that's where the 
-Comfortable in ambiguity; that's
-Comfortable in ambiguity; that's 
-Comfortable in ambiguity;
 Comfortable in ambiguity; that's where the interesting problems live.
 
