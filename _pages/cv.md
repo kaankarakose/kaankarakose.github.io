@@ -19,26 +19,25 @@ redirect_from:
 
 ## Experience
 
-**Engineer** *(current)*
+**Corparate Engineer** *(current)*
 
 - Assessing and ranking risk across use cases through structured technical
   validation and professional judgment
 - Automating validation workflows to reduce manual overhead and increase
   consistency across assessments
 
-**AI/ML Researcher** *(2026)*
+**Academic Engineer** *(2026)*
 
-- Built a modular multi-camera framework for automated behavioral analysis in clinical assessments
-- Fine-tuned and deployed production-grade vision models using parameter-efficient techniques under real compute constraints
-- Designed multi-site clinical video data pipelines
+- Contributed in prototyping framework for automation of behavioral analysis in clinical assessments
+- Vibe coded in deploying production-grade (died ideas..) models under real constraints
 
-**Research Assistant** *(2022)*
+**Engineer Student** *(2022)*
 
-- Contributed digital image forensics methods for source verification and authenticity analysis
-- Questioned and implemented learning strategy methods for model training
+- Emphasized Digital Image Forensics Methods
+- Questioned learning paradigms in machine
 
 ---
 
 ## Skills
 
-**Core:** Keywoard, Python, Linux/MacOS 
+**Core:** Keyboard, Python, Linux/MacOS 
