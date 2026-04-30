@@ -11,6 +11,7 @@ redirect_from:
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/typewriter.css">
 <script src="{{ site.baseurl }}/assets/js/typewriter.js" defer></script>
 
-I'm Kaan Karaköse, an AI researcher and engineer.
-
-I started as an Electrical Engineer — which taught me to think in systems, signals, and physical reality before I ever wrote a line of Python. That foundation didn't become obsolete. It became the lens through which I see AI.
+Researcher turned engineer. I ask questions first, build second.
+I think in systems — how things connect, why people assume what they assume,
+where the model breaks from reality. Comfortable in ambiguity;
+that's where the interesting problems live.
