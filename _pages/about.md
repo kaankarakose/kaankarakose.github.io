@@ -11,6 +11,13 @@ redirect_from:
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/typewriter.css">
 <script src="{{ site.baseurl }}/assets/js/typewriter.js" defer></script>
 
-Researcher turned engineer. I ask questions first, build second.
-I've spent years studying how minds — human and artificial — model each other.
-That lens doesn't turn off when I close the research tab.
+Researcher turned engineer.
+Thinking in systems — how things connect, why people assume what they assume, where the model breaks from reality.
+Comfortable in ambiguity; that's where the interesting problems 
+Comfortable in ambiguity; that's where the interesting 
+Comfortable in ambiguity; that's where the 
+Comfortable in ambiguity; that's
+Comfortable in ambiguity; that's 
+Comfortable in ambiguity;
+Comfortable in ambiguity; that's where the interesting problems live.
+
