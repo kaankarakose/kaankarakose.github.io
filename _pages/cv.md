@@ -19,7 +19,16 @@ redirect_from:
 
 ## Experience
 
-**AI/ML Researcher** *(2022 – Present)*
+
+**Engineer** *(current)*
+
+- Assessing and ranking risk across use cases through structured technical
+  validation and professional judgment
+- Automating validation workflows to reduce manual overhead and increase
+  consistency across assessments
+
+
+**AI/ML Researcher** *(2022 – 2026)*
 
 - Built and deployed a modular multi-camera AI framework for automated behavioral analysis in clinical ASD assessments — detecting behavioral timing markers with 95.5% accuracy in controlled settings
 - Fine-tuned and deployed production-grade vision models including SAM-2, YOLOWorld, and Llama 2; applied LoRA for efficient adaptation of large models under compute constraints
