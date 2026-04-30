@@ -9,52 +9,53 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* *B.S.* in Electrical Engineering, Uludag University
-* *M.S.* in Computer Engineering, Uludag University
-* *Ph.D* in Computer Science, Eötvös Loránd University, expected 2026
+## Education
 
-Work experience
-======
-* *AI/ML Researcher* ~ 9/2022 to Present, **NIPG ELTE**, Budapest, HU
-  * **AI/ML Development & Implementation:** Led finetuning and deployment of advanced AI models including SAM-2, YOLOWorld and Llama 2, demonstrating expertise in model training, validation, and maintenance aligned with real-world applications
-  * **Data Pipeline Development:** Designed and implemented end-to-end data processing pipelines for ML applications, including data cleaning, preprocessing, and feature/keypoint engineering to optimize model performance
-  * **Data Science & Visualization** Utilized Python-based visualization libraries (Matplotlib, Seaborn, Plotly, Tensorboard) to create comprehensive analytical dashboards and performance metrics for ML models
-  * **Object Detection & Tracking:** Experience in object detection, segmentation, and tracking, leveraging recent algorithms to enhance visual recognition systems using local/global feature descriptors
-  *  **Model Fine-tuning & Customization:** Implemented LoRA (Low-Rank Adaptation) techniques for Stable Diffusion models, enabling efficient fine-tuning and customization of image generation capabilities while maintaining model quality with reduced computational requirements
+- **Ph.D** in Computer Science *(expected 2026)*
+- **M.S.** in Computer Engineering
+- **B.S.** in Electrical Engineering
 
-* *Research Assistant*: 6/2019 to 9/2022, **Uludag University**, Bursa, TR
-  * **Algorithm Optimization:** Optimized the PRNU grid-search algorithm to enhance the accuracy and efficiency of image processing tasks, resulting in significant performance improvements
-  * **Artificial Intelligence Research:** Conducted extensive research and successfully implemented various artificial intelligence technologies
-  
+---
 
+## Experience
 
-Skills
-======
-* Programming Languages & Frameworks
-  * Python Pytorch TensorFlow, Scikit-Learn, C#
-* Data Science & Visualization:
-  * MatPlotLib, Numpy, Pandas, MS Excel, IBM SPSS
-* Computer Vision:
-  * OpenCV, Pillow
-* Development Tools & Environment
-  * Git version control
-  * Docker, Apptainer
-  * Anaconda
-  * Linux, Bash scripting
+**AI/ML Researcher** *(2022 – Present)*
 
+- Built and deployed a modular multi-camera AI framework for automated behavioral analysis in clinical ASD assessments — detecting behavioral timing markers with 95.5% accuracy in controlled settings
+- Fine-tuned and deployed production-grade vision models including SAM-2, YOLOWorld, and Llama 2; applied LoRA for efficient adaptation of large models under compute constraints
+- Designed end-to-end data pipelines covering collection, cleaning, preprocessing, and keypoint engineering for multi-site clinical video datasets
+- Developed object detection, segmentation, and tracking systems using both local and global feature descriptors
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+**Research Assistant** *(2019 – 2022)*
 
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+- Optimized PRNU grid-search algorithm for forensic image processing, improving both accuracy and runtime
+- Researched and implemented AI methods across computer vision and signal processing domains
+
+---
+
+## Skills
+
+**Core:** Python, PyTorch, TensorFlow, Scikit-Learn, C#
+
+**Computer Vision:** OpenCV, Pillow, object detection, segmentation, tracking, pose estimation
+
+**Data & Visualization:** NumPy, Pandas, Matplotlib, Seaborn, Plotly, TensorBoard
+
+**Infrastructure:** Docker, Apptainer, Linux, Bash, Git, Anaconda
+
+---
+
+## Publications
+
+<ul>{% for post in site.publications %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+---
+
+## Teaching
+
+<ul>{% for post in site.teaching %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
   
