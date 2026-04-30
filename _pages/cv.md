@@ -11,7 +11,7 @@ redirect_from:
 
 ## Education
 
-- **Ph.D** in Computer Science *(expected 2026)*
+- **Ph.D** in Computer Science *(never had)*
 - **M.S.** in Computer Engineering
 - **B.S.** in Electrical Engineering
 
