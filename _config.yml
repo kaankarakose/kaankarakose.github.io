@@ -85,11 +85,11 @@ author:
   avatar           : "pp.png"
   bio              : ""
   location         : "Budapest"
-  employer         : "NIPG"
+  employer         : 
   pubmed           :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=Y1ju0ikAAAAJ&hl=en"
   email            :
-  researchgate     :  #"https://www.researchgate.net/profile/Kaan-Karakoese-2"# example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  "https://www.researchgate.net/profile/Kaan-Karakoese-2"# example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
