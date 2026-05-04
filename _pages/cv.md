@@ -8,10 +8,9 @@ redirect_from:
 ---
 
 {% include base_path %}
-
 ## Education
 
-- **Ph.D** in Computer Science *(never had)*
+- **Ph.D.** coursework in Computer Science *(pursued, not completed)*
 - **M.S.** in Computer Engineering
 - **B.S.** in Electrical Engineering
 
@@ -21,15 +20,13 @@ redirect_from:
 
 **Corparate Engineer** *(current)*
 
-- Assessing and ranking risk across use cases through structured technical
-  validation and professional judgment
-- Automating validation workflows to reduce manual overhead and increase
-  consistency across assessments
+- Assessing and ranking risk across use cases through structured technical validation and professional judgment
+- Automating validation workflows to reduce manual overhead and increase consistency across assessments
 
 **Academic Engineer** *(2026)*
 
 - Contributed in prototyping framework for automation of behavioral analysis in clinical assessments
-- Vibe coded in deploying production-grade (died ideas..) models under real constraints
+- Vibe coded in deploying production-grade (dead ideas) models under real constraints
 
 **Engineer Student** *(2022)*
 
@@ -40,4 +37,4 @@ redirect_from:
 
 ## Skills
 
-**Core:** Keyboard, Python, Linux/MacOS 
+**Core:** Keyboard, Python, Ubuntu/MacOS 

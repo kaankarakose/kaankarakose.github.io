@@ -89,7 +89,7 @@ author:
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=Y1ju0ikAAAAJ&hl=en"
   email            :
-  researchgate     :  "https://www.researchgate.net/profile/Kaan-Karakoese-2"# example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  #"https://www.researchgate.net/profile/Kaan-Karakoese-2"# example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -107,7 +107,7 @@ author:
   orcid            : "http://orcid.org/0000-0002-4136-7592"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : #http://stackoverflow.com/users/123456/username
   steam            : "jarles13"
   tumblr           :
   twitter          :
