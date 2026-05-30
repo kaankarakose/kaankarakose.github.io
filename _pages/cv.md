@@ -34,4 +34,4 @@ redirect_from:
 
 ## Skills
 
-**Core:** Keyboard, Python, Ubuntu/MacOS 
+**Core:** Keyboard, Python 
