@@ -20,9 +20,6 @@ redirect_from:
 
 **Corparate Engineer** *(current)*
 
-- Assessing and ranking risk across use cases through structured technical validation and professional judgment
-- Automating validation workflows to reduce manual overhead and increase consistency across assessments
-
 **Academic Engineer** *(2026)*
 
 - Contributed in prototyping framework for automation of behavioral analysis in clinical assessments
